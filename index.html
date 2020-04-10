@@ -63,7 +63,11 @@
         function search(e) {
             if (e.keyCode == 13) {
                 var val = document.getElementById("search-field").value;
-                window.open("https://google.com/search?q=" + val);
+                if (val.startsWith("/r/")) {
+                    location.href="https://reddit.com" + val;
+                }
+                else
+                    location.href = "https://google.com/search?q=" + val;
             }
         }
         // Get current time and format
