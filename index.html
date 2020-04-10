@@ -62,7 +62,7 @@
         // Search on enter key event
         function search(e) {
             if (e.keyCode == 13) {
-                var val = document.getElementById("search-field").value;
+                var val = document.getElementById("search-field").value.trim();
                 if (val.startsWith("/r/")) {
                     location.href="https://reddit.com" + val;
                 }
