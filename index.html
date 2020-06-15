@@ -20,6 +20,7 @@
                 <div id="weather-description"class="inline"></div>
                 <div class="inline">-</div>
                 <div id="temp" class="inline"></div>
+		    <input type="text" autofocus>
             </div>
         </div>
         <div class="bookmark-container">
@@ -118,9 +119,6 @@
                 document.getElementById('search').style.display = 'none';
             }
         });
-        setTimeout(e=>{
-	document.querySelector('body').focus()
-},3000)
     </script>
 </body>
 </html>
