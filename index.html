@@ -108,7 +108,7 @@
             },100);
         }
 
-        document.addEventListener("keydown", event => {
+        document.addEventListener("keyup", event => {
             if (event.keyCode == 32) {          // Spacebar code to open search
                 document.getElementById('search').style.display = 'flex';
                 document.getElementById('search-field').focus();
